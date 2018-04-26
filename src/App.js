@@ -36,8 +36,8 @@ class App extends Component {
 
   render() {
    var issues = this.state.posts.map((issue)=>
-   <Tablerow key={issue.id} issue={issue}/>
- )
+     <Tablerow key={issue.id} issue={issue}/>
+   )
 
     return (
       <div className="container-fluid">
@@ -65,10 +65,10 @@ class App extends Component {
                 </table>
               </div>
                )}/>
-          <Route path="/:postID" render={(props)=> (
+            <Route path="/:postID" render={(props)=> (
                 <IssueDetails {...this.state} {...props}/>
               )}/>
-          </Switch>
+        </Switch>
       </div>
     );
   }

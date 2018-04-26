@@ -22,7 +22,7 @@ class IssueDetails extends React.Component {
             <p>issue body:{post.body}</p>
             <p>issue state:{post.state}</p>
             <p>issue comments:{post.comments}</p>
-            <p>User Profile url:<a href={post.user.url}>{post.user.url}</a></p>
+            <p>User Profile url:<a href={post.user.html_url}>{post.user.html_url}</a></p>
           </div>
         </div>
        </div>
